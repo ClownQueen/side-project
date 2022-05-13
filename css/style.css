@@ -1,12 +1,35 @@
 body{
+    font-family: "IM Fell English", serif;
+    font-style: italic;
     background-image: url("/img/Oldhouse.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+}
+
+h3{
+    color: black;
+}
+
+p{
+    color: black;
 }
 
 #entering{
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#welcoming{
+    justify-content: center;
+}
+
+#endingOne{
+    justify-content: center;
+}
+
+#endingOnePlot{
+    justify-content: center;
+    align-items: flex-end;
 }
