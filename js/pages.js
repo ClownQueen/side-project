@@ -6,6 +6,13 @@ function changePic(){
     document.body.style.backgroundSize = "100% 100%";
 
 }
+
+function startGame(){
+    $("#start").click(function(){
+        changePic();
+        alert("hello traveler I am sure you wanted to explore this abandoned home no?");
+    });
+}
 // return `<button id="exiting" onclick="exitPic()" style="color: transparent; background-color: transparent; border: transparent; cursor: pointer;">Exit the home</button>
 //      <button id="venture" onclick="anotherPic()" style="color: transparent; background-color: transparent; border: transparent; cursor: pointer;">Venture the home further</button>`
 // function exitPic() {
