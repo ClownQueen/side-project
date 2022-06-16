@@ -33,3 +33,9 @@ p{
     justify-content: center;
     align-items: flex-end;
 }
+
+#start{
+    justify-content: center;
+    background-color: blue;
+    color: white;
+}

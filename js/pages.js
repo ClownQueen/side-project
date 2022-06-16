@@ -7,9 +7,16 @@ function changePic(){
 
 }
 
+function homePic(){
+    document.body.style.backgroundImage = "url('/img/Oldhouse.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+}
+
 function startGame(){
     $("#start").click(function(){
         changePic();
         confirm("hello traveler I am sure you wanted to explore this abandoned home no?");
     });
 }
+
