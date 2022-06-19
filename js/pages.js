@@ -18,7 +18,7 @@ function homePic(){
 function startGame(){
     $("#start").click(function(){
         changePic();
-        confirm("hello traveler I am sure you wanted to explore this abandoned home no?");
+        startGameOption();
     });
 }
 

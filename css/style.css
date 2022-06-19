@@ -5,7 +5,7 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*display: flex;*/
+    display: flex;
 }
 
 h3{
@@ -16,13 +16,9 @@ p{
     color: black;
 }
 
-#entering{
-    justify-content: center;
-    align-items: center;
-}
-
 #welcoming{
     justify-content: center;
+    align-items: center
 }
 
 #endingOne{
@@ -36,7 +32,7 @@ p{
 
 #start{
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-color: blue;
     color: white;
 }
