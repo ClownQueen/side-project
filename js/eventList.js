@@ -9,6 +9,7 @@ function newGame(){
 function startGameOption(){
     if (confirm("hello traveler I am sure you wanted to explore this abandoned home no?") === true){
         alert("let's start the adventure then, shall we.")
+        livingRoom();
         document.getElementById("start").style.display = "none"
         document.getElementById("welcoming").style.display = "none"
     } else {
@@ -19,5 +20,7 @@ function startGameOption(){
 
 //search function will allow the person to look in that certain area for items
 function search (){
-
+    $("#searchButton").click(function (){
+        alert("you search the room and find " + randomItem)
+    })
 }
