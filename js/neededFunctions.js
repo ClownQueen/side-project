@@ -1,13 +1,15 @@
 "use strict";
 
+//child buttons needed to reach different js page
+let btn1 = document.createElement("button");
+let btn2 = document.createElement("button");
+
 //changePic function allows the screen to change its image depending on the room you are in
 function livingRoom(){
-    let btn1 = document.createElement("searchButton");
-    let btn2 = document.createElement("moveButton");
     document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
-    document.write("You entered the abounded house and see how delapitated the living room looks, and wonder how the rest of the house will look")
+    document.write("You entered the abounded house and see how dilapidated the living room looks, and wonder how the rest of the house will look")
     btn1.innerHTML = "Search Room"
     btn2.innerHTML = "Move to another room"
     document.body.appendChild(btn1)
@@ -31,7 +33,5 @@ function startGame(){
 //randomItems generated inside the rooms of the house
 function randomItem(){
     let items = ["Room Keys", "Broken Camera", "Vase full of dead Flowers", "Picture frames with photos and code on the back", "kids drawings", "lamps", "flashlight"]
-    for (let i = 0; i < items.length; i++) {
-
-    }
+    return "you found " + items.random
 }

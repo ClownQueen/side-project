@@ -22,5 +22,6 @@ function startGameOption(){
 function search (){
     $("#searchButton").click(function (){
         alert("you search the room and find " + randomItem)
+        document.removeChild(btn1);
     })
 }
