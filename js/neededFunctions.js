@@ -3,15 +3,17 @@
 //child buttons needed to reach different js page
 let btn1 = document.createElement("button");
 let btn2 = document.createElement("button");
+let newRoom = document.createElement("p");
 
 //changePic function allows the screen to change its image depending on the room you are in
 function livingRoom(){
     document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
-    document.write("You entered the abounded house and see how dilapidated the living room looks, and wonder how the rest of the house will look")
+    newRoom.innerHTML = "You entered the abounded house and see how dilapidated the living room looks, and wonder what stayed intact."
     btn1.innerHTML = "Search Room"
     btn2.innerHTML = "Move to another room"
+    document.body.appendChild(newRoom)
     document.body.appendChild(btn1)
     document.body.appendChild(btn2)
 }
