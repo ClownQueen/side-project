@@ -3,6 +3,7 @@
 //child buttons needed to reach different js page
 let btn1 = document.createElement("button");
 let btn2 = document.createElement("button");
+let btn3 = document.createElement("button");
 let newRoom = document.createElement("p");
 
 //changePic function allows the screen to change its image depending on the room you are in
@@ -13,9 +14,11 @@ function livingRoom(){
     newRoom.innerHTML = "You entered the abounded house and see how dilapidated the living room looks, and wonder what stayed intact."
     btn1.innerHTML = "Search Room"
     btn2.innerHTML = "Move to another room"
+    btn3.innerHTML = "Save Game"
     document.body.appendChild(newRoom)
     document.body.appendChild(btn1)
     document.body.appendChild(btn2)
+    document.body.appendChild(btn3)
 }
 
 //homePic function is allowing the user to go back to the m=home page if desired
