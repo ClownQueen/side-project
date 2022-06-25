@@ -1,15 +1,11 @@
 "use strict";
 
-//new game function allows user to decide if the want to start a new game or not
-/**TODO: MAKE NEW GAME AN OPTION WHEN ON THE HOME SCREEN*/
-function newGame(){
-
-}
-
 //saveGame function allows the person to save the game from the part they are on
 /**TODO: MAKE THE SAVE OPTION AVAILABLE WHEN PLAYING THE GAME*/
 function saveGame(){
-
+    $("#save").click(function (){
+        alert("Game is saved")
+    })
 }
 
 //start game function allows a person to decide if the want to explore the house or not
@@ -29,8 +25,8 @@ function startGameOption(){
 //search function will allow the person to look in that certain area for items
 /**TODO: MAKE THE SEARCH BUTTON WORK ONCE CLICKED*/
 function search (){
-    $("#searchButton").click(function (){
+    $("#search").click(function (){
         alert("you search the room and find " + randomItem)
-        document.removeChild(btn1);
+        document.getElementById("save").style.display = "none";
     })
 }
