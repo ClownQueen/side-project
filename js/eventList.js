@@ -2,10 +2,12 @@
 
 //saveGame function allows the person to save the game from the part they are on
 /**TODO: MAKE THE SAVE OPTION AVAILABLE WHEN PLAYING THE GAME*/
-function saveGame(){
-    $("#save").click(function (){
-        alert("Game is saved")
-    })
+function saveGameOption(){
+    if (confirm("would you like to save?") === true){
+        alert("Game has been Saved")
+    } else {
+        alert("Game wasn't saved")
+    }
 }
 
 //start game function allows a person to decide if the want to explore the house or not
@@ -27,6 +29,6 @@ function startGameOption(){
 function search (){
     $("#search").click(function (){
         alert("you search the room and find " + randomItem)
-        document.getElementById("save").style.display = "none";
+        document.getElementById("search").style.visibility = "hidden";
     })
 }

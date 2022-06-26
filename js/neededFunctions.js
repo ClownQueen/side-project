@@ -6,9 +6,9 @@ function livingRoom(){
     document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
-    document.getElementById("search").style.display = "visible";
-    document.getElementById("save").style.display = "visible";
-    document.getElementById("move").style.display = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
+    document.getElementById("move").style.visibility = "visible";
 }
 
 //homePic function is allowing the user to go back to the m=home page if desired
@@ -28,6 +28,14 @@ function startGame(){
     $("#start").click(function(){
         startGameOption();
     });
+}
+
+//saveGame function allows the user to save the progressed they made in the game
+/**TODO: MAKE SAVEGAME WORK ONCE THE PERSON HAS PRESSED THE SAVE GAME BUTTON*/
+function saveGame(){
+    $("#save").click(function (){
+        saveGameOption()
+    })
 }
 
 //randomItems generated inside the rooms of the house
