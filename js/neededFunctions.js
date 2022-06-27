@@ -6,6 +6,7 @@ function livingRoom(){
     document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("livingRoomTalk").style.visibility = "visible";
     document.getElementById("search").style.visibility = "visible";
     document.getElementById("save").style.visibility = "visible";
     document.getElementById("move").style.visibility = "visible";
@@ -17,6 +18,7 @@ function homePic(){
     document.body.style.backgroundImage = "url('/img/Oldhouse.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("livingRoomTalk").style.display = "none";
     document.getElementById("save").style.display = "none";
     document.getElementById("search").style.display = "none";
     document.getElementById("move").style.display = "none";
