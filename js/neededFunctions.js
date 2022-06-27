@@ -1,12 +1,23 @@
 "use strict";
 
-//changePic function allows the screen to change its image depending on the room you are in
+//livingRoom function allows the screen to change its image to the beginning of the house
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR AND HAVE THE DIALOG AND BUTTONS APPEAR IN SAID ROOMS*/
 function livingRoom(){
     document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
     document.getElementById("livingRoomTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
+    document.getElementById("move").style.visibility = "visible";
+}
+
+//library function allows the screen to change its image to a different room
+function library(){
+    document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("libraryTalk").style.visibility = "visible";
     document.getElementById("search").style.visibility = "visible";
     document.getElementById("save").style.visibility = "visible";
     document.getElementById("move").style.visibility = "visible";
@@ -19,6 +30,7 @@ function homePic(){
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
     document.getElementById("livingRoomTalk").style.display = "none";
+    document.getElementById("libraryTalk").style.display = "none";
     document.getElementById("save").style.display = "none";
     document.getElementById("search").style.display = "none";
     document.getElementById("move").style.display = "none";
