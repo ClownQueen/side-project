@@ -9,10 +9,12 @@ function livingRoom(){
     document.getElementById("livingRoomTalk").style.visibility = "visible";
     document.getElementById("search").style.visibility = "visible";
     document.getElementById("save").style.visibility = "visible";
-    document.getElementById("move").style.visibility = "visible";
+    document.getElementById("moveToLibrary").style.visibility = "visible";
+    document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
 //library function allows the screen to change its image to a different room
+/**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function library(){
     document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
     document.body.style.backgroundRepeat = "no-repeat";
@@ -20,7 +22,21 @@ function library(){
     document.getElementById("libraryTalk").style.visibility = "visible";
     document.getElementById("search").style.visibility = "visible";
     document.getElementById("save").style.visibility = "visible";
-    document.getElementById("move").style.visibility = "visible";
+    document.getElementById("moveToLivingRoom").style.visibility = "visible";
+    document.getElementById("moveToDinningRoom").style.visibility = "visible";
+}
+
+//library function allows the screen to change its image to a different room
+/**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
+function dinningRoom(){
+    document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("dinningRoomTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
+    document.getElementById("moveToLivingRoom").style.visibility = "visible";
+    document.getElementById("moveToLibrary").style.visibility = "visible";
 }
 
 //homePic function is allowing the user to go back to the m=home page if desired
