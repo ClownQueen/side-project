@@ -3,40 +3,25 @@
 //livingRoom function allows the screen to change its image to the beginning of the house
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR AND HAVE THE DIALOG AND BUTTONS APPEAR IN SAID ROOMS*/
 function livingRoom(){
-    document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundSize = "100% 100%";
-    document.getElementById("livingRoomTalk").style.visibility = "visible";
-    document.getElementById("search").style.visibility = "visible";
-    document.getElementById("save").style.visibility = "visible";
-    document.getElementById("moveToLibrary").style.visibility = "visible";
-    document.getElementById("moveToDinningRoom").style.visibility = "visible";
+    $("#toLivingRoom").click(function (){
+        moveToLivingRoom()
+    })
 }
 
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function library(){
-    document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundSize = "100% 100%";
-    document.getElementById("libraryTalk").style.visibility = "visible";
-    document.getElementById("search").style.visibility = "visible";
-    document.getElementById("save").style.visibility = "visible";
-    document.getElementById("moveToLivingRoom").style.visibility = "visible";
-    document.getElementById("moveToDinningRoom").style.visibility = "visible";
+    $("#toLibrary").click(function (){
+        moveToLibrary()
+    })
 }
 
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function dinningRoom(){
-    document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundSize = "100% 100%";
-    document.getElementById("dinningRoomTalk").style.visibility = "visible";
-    document.getElementById("search").style.visibility = "visible";
-    document.getElementById("save").style.visibility = "visible";
-    document.getElementById("moveToLivingRoom").style.visibility = "visible";
-    document.getElementById("moveToLibrary").style.visibility = "visible";
+    $("#toDinningRoom").click(function (){
+        moveToDinningRoom()
+    })
 }
 
 //homePic function is allowing the user to go back to the m=home page if desired

@@ -32,3 +32,36 @@ function search (){
         document.getElementById("search").style.visibility = "hidden";
     })
 }
+
+function moveToDinningRoom(){
+        document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100% 100%";
+        document.getElementById("dinningRoomTalk").style.visibility = "visible";
+        document.getElementById("search").style.visibility = "visible";
+        document.getElementById("save").style.visibility = "visible";
+        document.getElementById("moveToLivingRoom").style.visibility = "visible";
+        document.getElementById("moveToLibrary").style.visibility = "visible";
+}
+
+function moveToLibrary(){
+    document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("libraryTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
+    document.getElementById("moveToLivingRoom").style.visibility = "visible";
+    document.getElementById("moveToDinningRoom").style.visibility = "visible";
+}
+
+function moveToLivingRoom(){
+    document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("livingRoomTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
+    document.getElementById("moveToLibrary").style.visibility = "visible";
+    document.getElementById("moveToDinningRoom").style.visibility = "visible";
+}
