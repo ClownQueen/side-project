@@ -4,7 +4,14 @@
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR AND HAVE THE DIALOG AND BUTTONS APPEAR IN SAID ROOMS*/
 function livingRoom(){
     $("#toLivingRoom").click(function (){
-        moveToLivingRoom()
+        document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100% 100%";
+        document.getElementById("livingRoomTalk").style.visibility = "visible";
+        document.getElementById("search").style.visibility = "visible";
+        document.getElementById("save").style.visibility = "visible";
+        document.getElementById("moveToLibrary").style.visibility = "visible";
+        document.getElementById("moveToDinningRoom").style.visibility = "visible";
     })
 }
 
@@ -12,7 +19,14 @@ function livingRoom(){
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function library(){
     $("#toLibrary").click(function (){
-        moveToLibrary()
+        document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100% 100%";
+        document.getElementById("libraryTalk").style.visibility = "visible";
+        document.getElementById("search").style.visibility = "visible";
+        document.getElementById("save").style.visibility = "visible";
+        document.getElementById("moveToLivingRoom").style.visibility = "visible";
+        document.getElementById("moveToDinningRoom").style.visibility = "visible";
     })
 }
 
@@ -20,7 +34,14 @@ function library(){
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function dinningRoom(){
     $("#toDinningRoom").click(function (){
-        moveToDinningRoom()
+        document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100% 100%";
+        document.getElementById("dinningRoomTalk").style.visibility = "visible";
+        document.getElementById("search").style.visibility = "visible";
+        document.getElementById("save").style.visibility = "visible";
+        document.getElementById("moveToLivingRoom").style.visibility = "visible";
+        document.getElementById("moveToLibrary").style.visibility = "visible";
     })
 }
 
