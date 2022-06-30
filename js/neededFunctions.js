@@ -10,9 +10,9 @@ function livingRoom(){
         document.getElementById("livingRoomTalk").style.visibility = "visible";
         document.getElementById("search").style.visibility = "visible";
         document.getElementById("save").style.visibility = "visible";
-        document.getElementById("moveToLibrary").style.visibility = "visible";
-        document.getElementById("moveToDinningRoom").style.visibility = "visible";
     })
+    // document.getElementById("moveToLibrary").style.visibility = "visible";
+    // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
 //library function allows the screen to change its image to a different room
@@ -25,9 +25,9 @@ function library(){
         document.getElementById("libraryTalk").style.visibility = "visible";
         document.getElementById("search").style.visibility = "visible";
         document.getElementById("save").style.visibility = "visible";
-        document.getElementById("moveToLivingRoom").style.visibility = "visible";
-        document.getElementById("moveToDinningRoom").style.visibility = "visible";
     })
+    // document.getElementById("moveToLivingRoom").style.visibility = "visible";
+    // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
 //library function allows the screen to change its image to a different room
@@ -40,9 +40,9 @@ function dinningRoom(){
         document.getElementById("dinningRoomTalk").style.visibility = "visible";
         document.getElementById("search").style.visibility = "visible";
         document.getElementById("save").style.visibility = "visible";
-        document.getElementById("moveToLivingRoom").style.visibility = "visible";
-        document.getElementById("moveToLibrary").style.visibility = "visible";
     })
+    // document.getElementById("moveToLivingRoom").style.visibility = "visible";
+    // document.getElementById("moveToLibrary").style.visibility = "visible";
 }
 
 //homePic function is allowing the user to go back to the m=home page if desired
@@ -51,11 +51,10 @@ function homePic(){
     document.body.style.backgroundImage = "url('/img/Oldhouse.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
-    document.getElementById("livingRoomTalk").style.display = "none";
-    document.getElementById("libraryTalk").style.display = "none";
-    document.getElementById("save").style.display = "none";
-    document.getElementById("search").style.display = "none";
-    document.getElementById("move").style.display = "none";
+    document.getElementById("livingRoomTalk").style.visibility = "hidden";
+    document.getElementById("libraryTalk").style.visibility = "hidden";
+    document.getElementById("save").style.visibility = "hidden";
+    document.getElementById("search").style.visibility = "hidden";
 }
 
 //startGame function allows the user to confirm if they want to start a new game or not
