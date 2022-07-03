@@ -15,6 +15,8 @@ function livingRoom(){
     // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
+/**ROOMS IN THE HOUSE */
+/**TODO: MAKE THE BUTTONS OF THE OTHER  ROOMS WORK AND ALLOW THE PICTURE TO CHANGE THROUGHOUT THE HOUSE*/
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function library(){
@@ -56,6 +58,7 @@ function homePic(){
     document.getElementById("save").style.visibility = "hidden";
     document.getElementById("search").style.visibility = "hidden";
 }
+/**END OF THE ROOMS IN THE HOUSE*/
 
 //startGame function allows the user to confirm if they want to start a new game or not
 /**TODO: MAKE THE STARTGAMEOPTION WORK ONCE THE PERSON HAS PRESSED THE START GAME BUTTON*/
