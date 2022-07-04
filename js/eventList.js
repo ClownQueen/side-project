@@ -32,3 +32,16 @@ function search (){
         document.getElementById("search").style.visibility = "hidden";
     })
 }
+
+function move(){
+    $("#move").click(function (){
+        if (confirm("would you like to move to the library?") === true){
+            library()
+        } else if (confirm("would you like to go to the dining room?") === true){
+            diningRoom()
+        } else {
+            alert("You decide to explore the living room more.")
+            livingRoom()
+        }
+    })
+}
