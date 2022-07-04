@@ -9,10 +9,10 @@ function livingRoom(){
         document.body.style.backgroundSize = "100% 100%";
         document.getElementById("livingRoomTalk").style.visibility = "visible";
         document.getElementById("search").style.visibility = "visible";
+        document.getElementById("moveToLibrary").style.visibility = "visible";
+        document.getElementById("moveToDinningRoom").style.visibility = "visible";
         document.getElementById("save").style.visibility = "visible";
     })
-    // document.getElementById("moveToLibrary").style.visibility = "visible";
-    // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
 /**ROOMS IN THE HOUSE */
@@ -26,25 +26,25 @@ function library(){
         document.body.style.backgroundSize = "100% 100%";
         document.getElementById("libraryTalk").style.visibility = "visible";
         document.getElementById("search").style.visibility = "visible";
+        document.getElementById("moveToLivingRoom").style.visibility = "visible";
+        document.getElementById("moveToDinningRoom").style.visibility = "visible";
         document.getElementById("save").style.visibility = "visible";
     })
-    // document.getElementById("moveToLivingRoom").style.visibility = "visible";
-    // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
-function dinningRoom(){
-    $("#toDinningRoom").click(function (){
-        document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+function diningRoom(){
+    $("#toDiningRoom").click(function (){
+        document.body.style.backgroundImage = "url('/img/DiningRoom.png')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "100% 100%";
         document.getElementById("dinningRoomTalk").style.visibility = "visible";
         document.getElementById("search").style.visibility = "visible";
+        document.getElementById("moveToLivingRoom").style.visibility = "visible";
+        document.getElementById("moveToLibrary").style.visibility = "visible";
         document.getElementById("save").style.visibility = "visible";
     })
-    // document.getElementById("moveToLivingRoom").style.visibility = "visible";
-    // document.getElementById("moveToLibrary").style.visibility = "visible";
 }
 
 //homePic function is allowing the user to go back to the m=home page if desired
