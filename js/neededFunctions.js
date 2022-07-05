@@ -3,14 +3,13 @@
 //livingRoom function allows the screen to change its image to the beginning of the house
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR AND HAVE THE DIALOG AND BUTTONS APPEAR IN SAID ROOMS*/
 function livingRoom(){
-    $("#toLivingRoom").click(function (){
-        document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "100% 100%";
-        document.getElementById("livingRoomTalk").style.visibility = "visible";
-        document.getElementById("search").style.visibility = "visible";
-        document.getElementById("save").style.visibility = "visible";
-    })
+    document.body.style.backgroundImage = "url('/img/delapitadeHome.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("livingRoomTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("move").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
     // document.getElementById("moveToLibrary").style.visibility = "visible";
     // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
@@ -20,14 +19,13 @@ function livingRoom(){
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function library(){
-    $("#toLibrary").click(function (){
-        document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "100% 100%";
-        document.getElementById("libraryTalk").style.visibility = "visible";
-        document.getElementById("search").style.visibility = "visible";
-        document.getElementById("save").style.visibility = "visible";
-    })
+    document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("libraryTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("move").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
     // document.getElementById("moveToLivingRoom").style.visibility = "visible";
     // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
@@ -35,14 +33,13 @@ function library(){
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
 function diningRoom(){
-    $("#toDiningRoom").click(function (){
-        document.body.style.backgroundImage = "url('/img/DiningRoom.png')";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "100% 100%";
-        document.getElementById("dinningRoomTalk").style.visibility = "visible";
-        document.getElementById("search").style.visibility = "visible";
-        document.getElementById("save").style.visibility = "visible";
-    })
+    document.body.style.backgroundImage = "url('/img/DiningRoom.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("dinningRoomTalk").style.visibility = "visible";
+    document.getElementById("search").style.visibility = "visible";
+    document.getElementById("move").style.visibility = "visible";
+    document.getElementById("save").style.visibility = "visible";
     // document.getElementById("moveToLivingRoom").style.visibility = "visible";
     // document.getElementById("moveToLibrary").style.visibility = "visible";
 }
@@ -56,6 +53,7 @@ function homePic(){
     document.getElementById("livingRoomTalk").style.visibility = "hidden";
     document.getElementById("libraryTalk").style.visibility = "hidden";
     document.getElementById("save").style.visibility = "hidden";
+    document.getElementById("move").style.visibility = "hidden";
     document.getElementById("search").style.visibility = "hidden";
 }
 /**END OF THE ROOMS IN THE HOUSE*/
