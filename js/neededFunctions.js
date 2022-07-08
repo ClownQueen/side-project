@@ -14,7 +14,7 @@ function livingRoom(){
     // document.getElementById("moveToDinningRoom").style.visibility = "visible";
 }
 
-/**ROOMS IN THE HOUSE */
+/**ROOMS IN THE HOUSE(MAYBE MORE PICTURE CHANGES THAN COMPUTER IS USER TO)*/
 /**TODO: MAKE THE BUTTONS OF THE OTHER  ROOMS WORK AND ALLOW THE PICTURE TO CHANGE THROUGHOUT THE HOUSE*/
 //library function allows the screen to change its image to a different room
 /**TODO: MAKE A NEW ROOM OF THE HOUSE APPEAR WITH THE BUTTONS AND DIALOG APPEAR FOR THE ROOM*/
@@ -76,7 +76,12 @@ function saveGame(){
 
 //randomItems generated inside the rooms of the house
 /**TODO: MAKE RANDOM ITEMS APPEAR IN ROOMS AND ONLY HAVE THEM APPEAR ONCE*/
+/**FIND A WAY THAT ONLY THE SPECIFIC ITEM IS SAID TO BE PICKED UP*/
 function randomItem(){
     let items = ["Room Keys", "Broken Camera", "Vase full of dead Flowers", "Picture frames with photos and code on the back", "kids drawings", "lamps", "flashlight"]
+    //let that each time it goes through the loop it only gets rid of one item
+    for (let i = 0; i < items.length; i--) {
+
+    }
     return "you found " + items.random
 }
