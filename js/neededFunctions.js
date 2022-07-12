@@ -22,6 +22,7 @@ function library(){
     document.body.style.backgroundImage = "url('/img/oldLibrary.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("livingRoomTalk").style.visibility = "hidden";
     document.getElementById("libraryTalk").style.visibility = "visible";
     document.getElementById("search").style.visibility = "visible";
     document.getElementById("move").style.visibility = "visible";
@@ -36,7 +37,9 @@ function diningRoom(){
     document.body.style.backgroundImage = "url('/img/DiningRoom.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "100% 100%";
+    document.getElementById("livingRoomTalk").style.visibility = "hidden";
     document.getElementById("dinningRoomTalk").style.visibility = "visible";
+    document.getElementById("libraryTalk").style.visibility = "hidden";
     document.getElementById("search").style.visibility = "visible";
     document.getElementById("move").style.visibility = "visible";
     document.getElementById("save").style.visibility = "visible";
