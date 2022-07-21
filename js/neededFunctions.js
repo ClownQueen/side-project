@@ -80,8 +80,8 @@ function saveGame(){
 //randomItems generated inside the rooms of the house
 /**TODO: MAKE RANDOM ITEMS APPEAR IN ROOMS AND ONLY HAVE THEM APPEAR ONCE*/
 /**FIND A WAY THAT ONLY THE SPECIFIC ITEM IS SAID TO BE PICKED UP*/
+let items = ["Room Keys", "Broken Camera", "Vase full of dead Flowers", "Picture frames with photos and code on the back", "kids drawings", "lamps", "flashlight"]
 function randomItem(){
-    let items = ["Room Keys", "Broken Camera", "Vase full of dead Flowers", "Picture frames with photos and code on the back", "kids drawings", "lamps", "flashlight"]
     //let that each time it goes through the loop it only gets rid of one item
     for (let i = 0; i < items.length; i--) {
         let rand = items[Math.floor(Math.random() * items.length)];
